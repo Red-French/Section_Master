@@ -1,0 +1,34 @@
+// SASS-IFY!
+@import "content_windows";
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.navbar {
+// 	width: 80%;
+// 	height: 35px;
+// 	margin: 0 auto 0 auto;
+	border: $border;
+	// background-color: #FFB4B0;
+}
+.songFont {
+	font-size: 1.65em;
+	font-family: $font-stack;
+	color: #785616;
+	margin-left: 5%;
+}
+.songDetails {
+	font-size: .9em;
+	font-family: $font-stack;
+	margin-left: 5%;
+}
+.filterButton {
+	margin: 0 auto 0 auto;
+}
+.moreButton {
+	vertical-align: text-bottom;
+}

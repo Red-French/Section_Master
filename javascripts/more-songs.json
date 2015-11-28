@@ -1,0 +1,34 @@
+{
+  "songs": [
+    {
+      "title": "I Walk the Line",
+      "artist": "Johnny Cash",
+      "album": "Southern Trains"
+    },
+    {
+      "title": "Strangers in the Night",
+      "artist": "Frank Sinatra",
+      "album": "Another Night"      
+    },
+    {
+      "title": "Amore",
+      "artist": "Dean Martin",
+      "album": "Gimme a Drink"
+    },
+    {
+      "title": "News Boy",
+      "artist": "Frank Letz",
+      "album": "One Night Ago"
+    },
+    {
+      "title": "With George",
+      "artist": "Melba Montgomery",
+      "album": "Springtime in Tennessee"
+    },
+    {
+      "title": "Tobacco Row",
+      "artist": "Tennessee Plowboy",
+      "album": "Dirt Roads"
+    }
+  ]
+}

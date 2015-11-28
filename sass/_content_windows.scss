@@ -1,0 +1,18 @@
+$border: 2px solid black;
+$options-color: #4DD7fA;
+$results-color: #FEFAC0;
+
+#options {
+	// float: left;
+	// margin: 5px 0 0 20.5%;
+	// width: 21%;
+	border: $border;
+	background-color: $options-color;
+}
+#results {
+	// float: right;
+	// margin: 5px 20.5% 0 0;
+	// width: 57%;
+	border: $border;
+	background-color: $results-color;
+}

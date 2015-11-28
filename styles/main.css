@@ -1,0 +1,33 @@
+#options {
+  border: 2px solid black;
+  background-color: #4DD7fA; }
+
+#results {
+  border: 2px solid black;
+  background-color: #FEFAC0; }
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333; }
+
+.navbar {
+  border: 2px solid black; }
+
+.songFont {
+  font-size: 1.65em;
+  font-family: Helvetica, sans-serif;
+  color: #785616;
+  margin-left: 5%; }
+
+.songDetails {
+  font-size: .9em;
+  font-family: Helvetica, sans-serif;
+  margin-left: 5%; }
+
+.filterButton {
+  margin: 0 auto 0 auto; }
+
+.moreButton {
+  vertical-align: text-bottom; }
+
+/*# sourceMappingURL=main.css.map */

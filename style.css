@@ -1,0 +1,38 @@
+#nav {
+	width: 80%;
+	height: 35px;
+	margin: 0 auto 0 auto;
+	border: 2px solid black;
+	background-color: #FFB4B0;
+}
+#options {
+	/*float: left;*/
+	/*margin: 5px 0 0 20.5%;*/
+	/*width: 21%;*/
+	/*border: 2px solid black;*/
+	/*background-color: #4DD7fA;*/
+}
+#results {
+	/*float: right;*/
+	/*margin: 5px 20.5% 0 0;*/
+	/*width: 57%;*/
+	/*border: 2px solid black;*/
+	/*background-color: #FEFAC0;*/
+}
+.songFont {
+	font-size: 1.65em;
+	font-family: Arial;
+	color: #785616;
+	margin-left: 5%;
+}
+.songDetails {
+	font-size: .9em;
+	font-family: Arial;
+	margin-left: 5%;
+}
+.filterButton {
+	margin: 0 auto 0 auto;
+}
+.moreButton {
+	vertical-align: text-bottom;
+}

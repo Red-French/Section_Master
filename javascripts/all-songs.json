@@ -1,0 +1,74 @@
+{
+  "songs": {
+    "walk": {
+      "title": "The Walk",
+      "artist": "Mayer Hawthorne",
+      "album": "How Do You Do"
+    },
+    "medicine": {
+      "title": "Medicine",
+      "artist": "Grace Potter",
+      "album": "Grace Potter and the Nocturnals"      
+    },
+    "legs": {
+      "title": "Legs",
+      "artist": "ZZ Top",
+      "album": "Eliminator"      
+    },
+    "logical": {
+      "title": "The Logical Song",
+      "artist": "Supertr@amp",
+      "album": "Breakfast in America"
+    },
+    "brick": {
+      "title": "Another Brick in the Wall",
+      "artist": "Pink Floyd",
+      "album": "The Wall"
+    },
+    "ironic": {
+      "title": "Ironic",
+      "artist": "Alanis Morisette",
+      "album": "Jagged Little Pill"
+    },
+    "porter": {
+      "title": "Hey Porter",
+      "artist": "Johnny Cash",
+      "album": "Trains"
+    },
+    "johnny": {
+      "title": "Johnny Reb",
+      "artist": "Johnny Horton",
+      "album": "CSA"
+    },
+    "line": {
+      "title": "I Walk the Line",
+      "artist": "Johnny Cash",
+      "album": "Southern Trains"
+    },
+    "strangers": {
+      "title": "Strangers in the Night",
+      "artist": "Frank Sinatra",
+      "album": "Another Night"      
+    },
+    "amore": {
+      "title": "Amore",
+      "artist": "Dean Martin",
+      "album": "Gimme a Drink"
+    },
+    "news": {
+      "title": "News Boy",
+      "artist": "Frank Letz",
+      "album": "One Night Ago"
+    },
+    "george": {
+      "title": "With George",
+      "artist": "Melba Montgomery",
+      "album": "Springtime in Tennessee"
+    },
+    "tobacco": {
+      "title": "Tobacco Row",
+      "artist": "Tennessee Plowboy",
+      "album": "Dirt Roads"
+    }
+  }
+}
