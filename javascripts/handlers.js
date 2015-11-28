@@ -10,7 +10,7 @@ $("#add").click(function(e) {
 	var results = $("#results");
 	htmlString = $("#results").html();
 	// display 'add song' form
-	results.html("<p>Song: <input id='newTune' class='inputButton' type='text' value=''></p>" + "<p>Artist: <input id='newArtist' class='inputButton' type='text' value=''></p>" + "<p>Album: <input id='newAlbum' class='inputButton' type='text' value=''></p>" + "<p><input class='addToSongList' type='button' value='Add Song to List'></p>");
+	results.html("<p>Song: <input id='newTune' class='inputButton' type='text' value=''></p>" + "<p>Member: <input id='newArtist' class='inputButton' type='text' value=''></p>" + "<p>Status: <input id='newAlbum' class='inputButton' type='text' value=''></p>" + "<p><input class='addToSongList' type='button' value='Add Song to List'></p>");
 });
 
 // EVENT LISTENER FOR DYNAMICALLY CREATED INPUT BUTTON

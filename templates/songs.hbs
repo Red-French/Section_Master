@@ -1,13 +1,10 @@
 {{#each songs}}
 	<div>
-		<div>
-			<h3>{{title}}</h3>
-			{{!-- {{album}} {{artist}} --}}
-			{{album}} {{artist}}
-		</div>
-		<div>
-			<input type="button" id="{{@key}}" class="edit-button" value="Edit"><input type="button" id="{{@key}}" class="delete-button" value="Delete">
-		</div>
+		<h3>{{title}}<h6><input type="button" id="{{@key}}" class="add-member-button" value="Add Member"></h6></h3>
+			<div>
+				{{album}} {{artist}}
+				<input type="button" id="{{@key}}" class="edit-button" value="Edit"><input type="button" id="{{@key}}" class="delete-button" value="Delete">
+			</div>
 	</div>
 {{/each}}
 
