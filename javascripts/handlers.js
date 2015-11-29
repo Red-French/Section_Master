@@ -46,25 +46,17 @@ $("#songTitle").click(function(){
 
 
 
-
-
-
 // EVENT LISTENER FOR DYNAMICALLY-CREATED ADD MEMBER BUTTON AFTER EACH SONG
 $(document).on("click",".add-member-button", function(event) {
-// if (event.target.className === "add-member-button") {
-	var currentSong = event.target.parentElement;
-	console.log("currentSong = ", $(currentSong);
-	add_member.addMember();
-// }
+	var currentSong = event.target.previousSibling.innerHTML;;
+	console.log("Add member to", currentSong);
+	add_member.addMember(currentSong);
 });
 
 // EVENT LISTENER FOR DYNAMICALLY-CREATED EDIT BUTTON AFTER EACH SONG
 $(document).on("click",".edit-button", function(event) {
 		console.log("edit click");
 });
-
-
-
 
 
 
@@ -153,18 +145,7 @@ var uniqueSongs = _.uniq(songTitleArray);  // .uniq will NOT work on an object, 
 	// 			var justTheArtists = _.pluck(uniqueArtists, "artist");
 	// console.log("justTheArtists", justTheArtists);
 
-
-
 // +++++++ END PULLING SPECIFIC INFO FROM ARRAYS +++++++++ //
-
-
-// var filteredData =	_.chain(songs.songs)
-// 					.filter(songs => songs.artist === chosenArtist)
-// 					// .unique("album.name").pluck("album").value();))
-// console.log("chosenArtist = ", chosenArtist);
-// console.log("filteredData", filteredData);
-
-
 
 
 // LOOP (W/ FOR-IN LOOP) THROUGH SONGLIST ARRAY-OBJECT TO FIND INFO THAT MATCHES USER'S ARTIST CHOICE
@@ -243,19 +224,7 @@ console.log("chosenSong is = ", chosenSong);
 	}
 }
 
-// BELOW IS NOT USED
-				// chained methods syntax: -- for notes only -- code below not used in this program
-				var uniqueAlbums = _.chain(songs.songs)  // chain methods together for data.songs
-									.uniq("album.name") // for each unique album name
-									.pluck("album")  // pluck the album's....
-									.value();  // name (value)
 
-
-				// return {
-				// 	uniqueArtists: justTheArtists,
-				// 	uniqueAlbums: uniqueAlbums,
-				// 	filteredData: filteredData
-				// }
 
 				});
 			}());
