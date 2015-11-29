@@ -15,8 +15,8 @@ requirejs.config({
   }
 });
 require(
-  ["hbs", "lodash", "firebase", "populate-songs", "handlers", "delete-song", "refresh"], 
-  function(Handlebars, _, Firebase, populate_songs, handlers, delete_song, refresh) {
+  ["hbs", "lodash", "firebase", "populate-songs", "handlers", "delete-song", "refresh", "add_member"], 
+  function(Handlebars, _, Firebase, populate_songs, handlers, delete_song, refresh, add_member) {
 
 // Once you get this working, click on one of the delete buttons, or add a new song, 
 // and the on("value") event will trigger immediately and your view of songs updates.

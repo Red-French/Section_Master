@@ -1,5 +1,5 @@
-define(["jquery", "lodash", "populate-songs", "add_songs", "q", "refresh"], 
-	function($, _, populate_songs, add_songs, Q, refresh) {
+define(["jquery", "lodash", "populate-songs", "add_songs", "q", "refresh", "add_member"], 
+	function($, _, populate_songs, add_songs, Q, refresh, add_member) {
 
 var deferred = Q.defer;  //  promises
 var chosenArtist;
@@ -40,6 +40,36 @@ $("#album").click(function(){
 $("#songTitle").click(function(){
 	refresh.getMeSomeData();
 });
+
+
+
+
+
+
+
+
+
+// EVENT LISTENER FOR DYNAMICALLY-CREATED ADD MEMBER BUTTON AFTER EACH SONG
+$(document).on("click",".add-member-button", function(event) {
+// if (event.target.className === "add-member-button") {
+	var currentSong = event.target.parentElement;
+	console.log("currentSong = ", $(currentSong);
+	add_member.addMember();
+// }
+});
+
+// EVENT LISTENER FOR DYNAMICALLY-CREATED EDIT BUTTON AFTER EACH SONG
+$(document).on("click",".edit-button", function(event) {
+		console.log("edit click");
+});
+
+
+
+
+
+
+
+
 
 // LOAD USES'S CHOSEN DATA (ARTIST, ALBUM, OR SONG) INTO DIV>'#RESULTS'
 $("#filterButton").click(function(){
