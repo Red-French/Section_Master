@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -73,8 +73,6 @@
   <div class="row"> <!-- BOOTSTRAP ROW -->
     <div class="col-xs-6, col-md-6"> <!-- BEGIN BOOTSTRAP COLUMN (try 3 & 9)-->
       <div id="options">
-    		<p>Song Length:</p>
-        <input type="range" name="Length" min="2" max="5">
         <p class="headings">Song: 
         <select id="songTitle">
         </select>
@@ -87,32 +85,45 @@
         <select id="album">
         </select>
         </p>
-    		<p>Genre:</p>
-    			<table>
-    				<tr>
-    					<td><input type="checkbox" name="genre" value="rock">Rock
-    					</td>
-    					<td>
-    					<input type="checkbox" name="genre" value="classical">Classical
-    					</td>
-    				</tr>
-    				<tr>
-    					<td><input type="checkbox" name="genre" value="pop">Pop
-    					</td>
-    					<td>
-    					<input type="checkbox" name="genre" value="jazz">Jazz
-    					</td>
-    				</tr>
-    				<tr>
-    					<td><input type="checkbox" name="genre" value="blues">Blues
-    					</td>
-    					<td>
-    						<input type="checkbox" name="genre" value="hipHop">Hip Hop
-    					</td>
-    				</tr>
-    			</table>
   			<button type="button" id="filterButton">Filter</button>
   		</div>
+        <div>
+            
+        <hr>
+<!--         <hr>
+        <div id="addTick">
+          <label>Passing Singer:</label>
+          <input type="text" id="newSinger" placeholder=" Singer to Add">
+            <a><button id="addSinger">Add </button></a> -->
+<!--
+            <select id="songTitle">
+              <option></option>
+            </select>
+-->
+
+<!--            <div><a><button ng-click="newWatchlist()">Add to</button></a><input ng-model="watchName" type="text" placeholder=" or enter new Watchlist"></div>-->
+        <!-- </div> -->
+
+<!--
+        <div class="dropdowns">
+          <label>Market:
+            <select ng-model="marketList" ng-options="thing.$id for thing in marketsList" ng-change="marketView(marketList)">
+            <option value="">Select Market</option>
+            </select>
+          </label>
+        - OR - 
+          <label>WatchList:
+            <select ng-model="watchList" ng-options="thing.$id for thing in listToWatch">
+            <option value="">Select Watchlist</option>
+            </select>
+          </label>
+        </div>
+-->
+            
+            
+            
+            
+        </div>
     </div> <!-- END BOOTSTRAP COLUMN 1 -->
     <div class="col-xs-6, col-md-6"> <!-- BEGIN BOOTSTRAP COLUMN 2 -->
   <!--   {{#each songs}}
@@ -124,6 +135,7 @@
     </div>
   {{/each}}
    -->
+      <div><input type="text" id="newSinger" placeholder=" Singer to Add"></div>
     	<div id="results"></div>
     </div> <!-- END BOOTSTRAP COLUMN 2 -->
   </div> <!-- END BOOTSTRAP ROW -->

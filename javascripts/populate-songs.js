@@ -36,7 +36,7 @@ define(["jquery"],
 
   //  LOAD SONG DROPDOWN (NOT CURRENTLY USED)
       require(["hbs!../templates/title"], function(dropdownTemplate) {
-          $("#songTitle").append(dropdownTemplate(songs));
+          $(".songTitle").append(dropdownTemplate(songs));
       });
     });
   }

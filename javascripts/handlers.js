@@ -48,9 +48,11 @@ $("#songTitle").click(function(){
 
 // EVENT LISTENER FOR DYNAMICALLY-CREATED ADD MEMBER BUTTON AFTER EACH SONG
 $(document).on("click",".add-member-button", function(event) {
-	var currentSong = event.target.previousSibling.innerHTML;;
+	var currentSong = event.target.previousSibling.innerHTML;
 	console.log("Add member to", currentSong);
 	add_member.addMember(currentSong);
+	var addThisSinger = $("#newSinger").val();
+	console.log("Member to be added is -->", addThisSinger);
 });
 
 // EVENT LISTENER FOR DYNAMICALLY-CREATED EDIT BUTTON AFTER EACH SONG
@@ -230,4 +232,93 @@ console.log("chosenSong is = ", chosenSong);
 			}());
 		});
 	});
+    
+
+
+// ADD SINGER TO CHOSEN SONG
+$("#addSinger").click(function(){
+	populate_songs.getMeSomeData(function(songs) {
+ console.log("inside add-singer-click = ", songs);
+	chosenSong = $("#songTitle").val();
+
+// lodash
+// define(["lodash"], function(_) {
+	return (function() {  // WHY A RETURN???
+			populate_songs.getMeSomeData(function(songs) {
+console.log("inside filter-click 'return' = ", songs);
+
+// +++++++ 	BEGIN MOVING OBJECTS OF 'SONGS' OBJECT INTO SEPARATE ARRAYS +++++++++ //
+
+// MOVE SONG TITLES INTO AN ARRAY
+var songTitleArray = [];  // create new array to move song titles into
+	for(var key in songs.songs){  // for each song object key
+		// console.log(songs.songs[key].title);
+		songTitleArray.push(songs.songs[key].title);  // push the song title of that key into the created array
+	}
+// console.log("songTitleArray (entire array) = ", songTitleArray);
+
+
+// +++++++ END MOVING OBJECTS OF 'SONGS' OBJECT INTO SEPARATE ARRAYS +++++++++ //
+
+
+// +++++++ BEGIN PULLING SPECIFIC INFO FROM ARRAYS +++++++++ //
+
+// LOOP (W/ FOR-IN LOOP) THROUGH SONGLIST ARRAY-OBJECT TO FIND INFO THAT MATCHES USER'S SONG CHOICE
+if (chosenSong !== "Choose Song") {
+console.log("chosenSong is = ", chosenSong);
+	for (property in songs.songs) {
+			// console.log(songs.songs[property]);
+		if (songs.songs[property].title === chosenSong) {
+			console.log("'for-in' says album = ", chosenSong);
+			console.log("songs.songs[property] = ", songs.songs[property]);
+
+			var output = {  // 'dummy' object to store info of song chosen due to handlebars looking for 'songs'.
+				songs: {
+				}
+			};
+			output.songs[property] = songs.songs[property]; // moves chosen song info into 'dummy' object created above.
+			// console.log(songs.songs[property]);
+			// console.log("output = ", output);
+
+			require(["hbs!../templates/songs"], function(songTemplate) {
+	    	$("#results").html(songTemplate(output));  // FORCE NEW LINE!!
+
+			});
+		}
+	}
+}
+
+
+
+				});
+			}());
+		});
+	});
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 });

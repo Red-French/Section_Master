@@ -10,7 +10,7 @@ define(["jquery"],
             for (var property in songs.songs) {
               if (songs.songs[property].title === currentSong) {
                 console.log("Firebase match is", songs.songs[property].title);
-                
+                // songs.songs[property].singer.push(newSinger);
               }
             }
           })
